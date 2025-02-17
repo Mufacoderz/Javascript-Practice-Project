@@ -1,2 +1,2 @@
 # Javascript-Practice-Project
-kumpulan projek latihan javascript
+kumpulan projek-projek latihan javascript dasar
