@@ -42,7 +42,7 @@ p{
 
 .color-display{
     width: 100%;
-    line-height-step: 150px;
+    height: 150px;
     border-radius: 12px;
     margin-top: 20px;
     transition: background-color 0.3s ease;
