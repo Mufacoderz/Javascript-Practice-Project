@@ -28,3 +28,5 @@ function generateQuote(){
 
 newQuote.addEventListener('click', generateQuote)
 
+generateQuote()
+
