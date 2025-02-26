@@ -40,3 +40,21 @@ body{
     text-align: right;
     outline: none;
 }
+
+.calculator-keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
+
+button{
+    height: 60px;
+    font-size: 24px;
+    border-radius: 8px;
+    border: none;
+    background-color: #eaeaea;
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    background-color: #d4d4d4;
+}
