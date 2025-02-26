@@ -54,7 +54,22 @@ button{
     border: none;
     background-color: #eaeaea;
     transition: background-color 0.3s ease;
+    cursor: pointer;
 }
 button:hover{
     background-color: #d4d4d4;
+}
+
+.operator{
+    background-color: #05d9c0;
+}
+.equal-sign{
+    background-color: #00796b;
+    color: white;
+}
+.zero{
+    grid-column: span 2;
+}
+.all-clear{
+    background-color: #ff3b30;
 }
