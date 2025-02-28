@@ -65,4 +65,28 @@ function calculate(firstOperand, secondOperand, operator){
         return firstOperand % secondOperand
     } 
     return secondOperand
+} 
+
+function resetCalculator(){
+    calculator.displayValue = '0'
+    calculator.firstOperand = null
+    calculator.waitingForSecondOperand = false
+    calculator.operator = null
+    updateDisplay()
 }
+
+function handleEqual(){
+    const {firstOperand, displayValue, operator} = calculator
+    const inputValue = parseFloat(displayValue)
+
+    if(operator && !calculator.waitingForSecondOperand){
+        const result = calculate(firstOperand, inputValue, operator)
+        calculator.displayValue = `${parseFloat(result.toFixed(7))}`
+        calculator.firstOperand = null
+        calculator.operator = null
+        calculator.waitingForSecondOperand = false
+        updateDisplay()
+    }
+}
+
+
