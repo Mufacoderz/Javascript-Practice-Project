@@ -5,40 +5,46 @@ const calculator = {
     operator: null
 }
 
-function updateDisplay(){
+// Fungsi untuk memperbarui tampilan layar kalkulator
+function updateDisplay() {
     const display = document.querySelector('.calculator-display')
     display.value = calculator.displayValue
 }
 
-function inputDigit(digit){
-    const {displayValue, waitingForSecondOperand} = calculator
+// Fungsi untuk menangani input angka
+function inputDigit(digit) {
+    const { displayValue, waitingForSecondOperand } = calculator
 
-    if(waitingForSecondOperand === true){
+    if (waitingForSecondOperand) {
         calculator.displayValue = digit
         calculator.waitingForSecondOperand = false
-    } else{
-        calculator.displayValue = displayValue === '0' ? digit: displayValue + digit
+    } else {
+        calculator.displayValue = displayValue === '0' ? digit : displayValue + digit
     }
     updateDisplay()
 }
 
-function inputDecimal(dot){
-    if(calculator.displayValue.includes(dot)){
+// Fungsi untuk menangani input desimal
+function inputDecimal(dot) {
+    if (!calculator.displayValue.includes(dot)) {
         calculator.displayValue += dot
+        updateDisplay()
     }
 }
 
-function handleOperator(nextOperator){
-    const {firstOperand, displayValue, operator} = calculator
-    const inpuValue = parseFloat(displayValue)
+// Fungsi untuk menangani operator
+function handleOperator(nextOperator) {
+    const { firstOperand, displayValue, operator } = calculator
+    const inputValue = parseFloat(displayValue)
 
-    if(operator && calculator.waitingForSecondOperand){
-        calculator.operator == nextOperator
+    if (operator && calculator.waitingForSecondOperand) {
+        calculator.operator = nextOperator
         return
     }
-    if(firstOperand === null && !isNaN(inpuValue)){
-        calculator.firstOperand = inpuValue
-    } else if (operator){
+
+    if (firstOperand === null && !isNaN(inputValue)) {
+        calculator.firstOperand = inputValue
+    } else if (operator) {
         const result = calculate(firstOperand, inputValue, operator)
         calculator.displayValue = `${parseFloat(result.toFixed(7))}`
         calculator.firstOperand = result
@@ -50,24 +56,26 @@ function handleOperator(nextOperator){
     updateDisplay()
 }
 
-function calculate(firstOperand, secondOperand, operator){
-    if(operator === '+'){
+// Fungsi untuk menghitung hasil operasi
+function calculate(firstOperand, secondOperand, operator) {
+    if (operator === '+') {
         return firstOperand + secondOperand
-    } else if (operator === '-'){
+    } else if (operator === '-') {
         return firstOperand - secondOperand
-    } else if (operator === '*'){
+    } else if (operator === '*') {
         return firstOperand * secondOperand
-    } else if (operator === '/'){
+    } else if (operator === '/') {
         return firstOperand / secondOperand
-    } else if (operator === '√'){
-        return firstOperand √ secondOperand
-    } else if (operator === '%'){
+    } else if (operator === '√') {
+        return Math.sqrt(firstOperand) // Perbaikan √ agar hanya menggunakan satu operand
+    } else if (operator === '%') {
         return firstOperand % secondOperand
-    } 
+    }
     return secondOperand
-} 
+}
 
-function resetCalculator(){
+// Fungsi untuk mereset kalkulator
+function resetCalculator() {
     calculator.displayValue = '0'
     calculator.firstOperand = null
     calculator.waitingForSecondOperand = false
@@ -75,11 +83,12 @@ function resetCalculator(){
     updateDisplay()
 }
 
-function handleEqual(){
-    const {firstOperand, displayValue, operator} = calculator
+// Fungsi untuk menangani tombol "="
+function handleEqual() {
+    const { firstOperand, displayValue, operator } = calculator
     const inputValue = parseFloat(displayValue)
 
-    if(operator && !calculator.waitingForSecondOperand){
+    if (operator && !calculator.waitingForSecondOperand) {
         const result = calculate(firstOperand, inputValue, operator)
         calculator.displayValue = `${parseFloat(result.toFixed(7))}`
         calculator.firstOperand = null
@@ -89,4 +98,33 @@ function handleEqual(){
     }
 }
 
+// Event listener untuk tombol kalkulator
+document.querySelector('.calculator-keys').addEventListener('click', (event) => {
+    const target = event.target
 
+    if (!target.matches('button')) {
+        return
+    }
+
+    if (target.classList.contains('operator')) {
+        handleOperator(target.value)
+        return
+    }
+
+    if (target.classList.contains('decimal')) {
+        inputDecimal(target.value)
+        return
+    }
+
+    if (target.classList.contains('all-clear')) {
+        resetCalculator()
+        return
+    }
+
+    if (target.classList.contains('equal-sign')) {
+        handleEqual()
+        return
+    }
+
+    inputDigit(target.value)
+})
