@@ -3,10 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>simple paint app</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div class="paint-app">
+        <div class="toolbar">
+            <button id="brush" class="tool active">
+                brush
+            </button>
+            <button id="eraser" class="tool active">
+                eraser
+            </button>
+            <input type="color" value="#000000" id="colorPicker">
+            <button id="clear" class="tool active">
+                clear
+            </button>
+        </div>
+
+        <canvas id="canvas"></canvas>
+    </div>
 
     <script src="script.js"></script>
     
