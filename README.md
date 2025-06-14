@@ -7,9 +7,9 @@ Kumpulan mini project JavaScript yang saya buat untuk latihan dan eksplorasi fit
 
 ## 🌐 Halaman Utama
 
-![Routing Preview]preview/(preview.png)
+![Routing Preview](preview/preview.png)
 
-Buka halaman utama: [Index Page](https://your-deployment-link/index.html)
+Buka halaman utama: [Index Page](https://mufacoderz.github.io/Javascript-Practice-Project/)
 
 ---
 
