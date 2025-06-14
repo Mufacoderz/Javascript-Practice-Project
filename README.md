@@ -1,7 +1,7 @@
 
 # 💻 JavaScript Practice Projects
 
-Kumpulan mini project JavaScript yang saya buat untuk latihan dan eksplorasi fitur dasar DOM, CSS, dan logika pemrograman interaktif.
+Kumpulan mini project JavaScript  untuk latihan dan eksplorasi fitur dasar DOM, CSS, dan logika pemrograman interaktif.
 
 ---
 
@@ -54,12 +54,6 @@ Buka halaman utama: [Index Page](https://mufacoderz.github.io/Javascript-Practic
 ### 📸 Carrousel Image Slider
 ❌ **Belum ada preview**  
 🔗 [Lihat Project](projects/Carrousel%20Image%20Slider/index.html)
-
----
-
-## 🧠 Catatan
-
-> Beberapa proyek memiliki preview gambar (`preview.png`) yang digunakan di halaman utama dan di README ini. Untuk tampilan terbaik, gunakan hosting seperti GitHub Pages atau Netlify.
 
 ---
 
