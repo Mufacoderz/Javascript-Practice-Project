@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Practice Projects</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      padding: 2rem;
+      color: #2d3436;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #2c3e50;
+    }
+
+    .project-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .card {
+      background: #ffffff;
+      width: 180px;
+      border-radius: 16px;
+      padding: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+    }
+
+    .card a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #0984e3;
+      text-align: center;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧠 JavaScript Practice Projects</h1>
+
+  <div class="project-container">
+    <div class="card">
+      <img src="projects/Random Quote Generator/quote.png" alt="Quote Generator" />
+      <a href="projects/Random Quote Generator/index.html">Quote Generator</a>
+    </div>
+    <div class="card">
+      <img src="projects/Number Guessing/number.png" alt="Number Sorter" />
+      <a href="projects/Number Guessing/index.html">Number Sorter</a>
+    </div>
+    <div class="card">
+      <img src="projects/Countdown Timer/timer.png" alt="Stopwatch" />
+      <a href="projects/Countdown Timer/index.html">Countdown Timer</a>
+    </div>
+    <div class="card">
+      <img src="projects/Calculator/calculator.png" alt="Calculator" />
+      <a href="projects/Calculator/index.html">Calculator</a>
+    </div>
+    <div class="card">
+      <img src="projects/Color Picker/color.png" alt="Color Picker" />
+      <a href="projects/Color Picker/index.html">Color Picker</a>
+    </div>
+  </div>
+</body>
+</html>
