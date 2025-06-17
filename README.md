@@ -45,30 +45,10 @@ Buka halaman utama: [Index Page](https://mufacoderz.github.io/Javascript-Practic
 
 ---
 
-### 🖌️ Paint App
-❌ **Belum ada preview**  
-🔗 [Lihat Project](projects/Paint%20App/index.html)
+### 🖊📝 Notes App
+![Preview](projects/notes%20app/notes.png) 
+🔗 [Lihat Project](projects/notes%20app/index.html)
 
----
 
-### 📸 Carrousel Image Slider
-❌ **Belum ada preview**  
-🔗 [Lihat Project](projects/Carrousel%20Image%20Slider/index.html)
 
----
-
-## 🚀 Cara Menjalankan
-
-1. Clone repo ini
-2. Buka `index.html` di browser
-3. Klik salah satu project untuk mencobanya
-
----
-
-## 🛠️ Stack yang Digunakan
-- HTML
-- CSS
-- JavaScript DOM
-
----
 
