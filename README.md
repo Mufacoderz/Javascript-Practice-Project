@@ -46,8 +46,14 @@ Buka halaman utama: [Index Page](https://mufacoderz.github.io/Javascript-Practic
 ---
 
 ### 🖊📝 Notes App
-![Preview](projects/notes%20app/notes.png) 
+![Preview](projects/notes%20app/preview.png) 
 🔗 [Lihat Project](projects/notes%20app/index.html)
+
+---
+
+### 🖊⛅ Weather App
+![Preview](projects/Weather%20app/preview.png) 
+🔗 [Lihat Project](projects/Weather%20app/index.html)
 
 
 
