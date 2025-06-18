@@ -35,7 +35,7 @@ body{
     cursor: pointer;
 }
 
-.tool .active{
+.tool.active{
     background-color: #ccc;
 }
 
