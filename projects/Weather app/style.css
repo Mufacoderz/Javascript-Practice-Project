@@ -1,125 +1,145 @@
-body{
+/* Reset dasar */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, #dcdcdc 50%, #e9e9e9 50%);
-    font-family: sans-serif;
-
-}
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
-main{
-    width: 300px;
-    height: max-content;
-    min-height: 300px;
-    background-color: #f7f7f7;
-    box-shadow: 0 30px 50px #5553;
+    background: linear-gradient(to bottom, #eceff1, #f5f7fa);
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Container utama */
+  main {
+    background-color: #ffffff;
+    border-radius: 20px;
     padding: 30px;
-    box-sizing: border-box;
-    border-radius: 30px;
-}
-
-main form{
-    border: 1px solid #5553;
+    width: 100%;
+    max-width: 360px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Form input */
+  main form {
     display: flex;
-    justify-content: space-between;
     border-radius: 30px;
-}
-
-main form input, main form button{
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background: #f0f2f5;
+  }
+  
+  main form input {
+    flex: 1;
+    padding: 12px 16px;
     border: none;
-    background-color: transparent;
     outline: none;
-    padding: 10px;
-}
-
-main form i{
-    opacity: 0.7;
-}
-
-main .result{
-    padding-top: 20px;
+    background: transparent;
+    font-size: 1em;
+  }
+  
+  main form button {
+    padding: 12px 16px;
+    background: #2196f3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  main form button:hover {
+    background: #1976d2;
+  }
+  
+  /* Hasil cuaca */
+  .result {
+    margin-top: 20px;
     text-align: center;
-}
-
-main .result .name{
-    font-weight: bold;
-    font-size: large;
+  }
+  
+  .result .name {
+    font-weight: 600;
+    font-size: 1.1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-}
-
-main .temperature img{
-    width: 150px;
-    filter: drop-shadow(
-        0 10px 50px #000
-    );
-}
-
-main .temperature figcaption{
-    font-size: 3em;
-}
-
-main .description{
-    padding: 10px 0 30px;
-}
-main ul{
+    gap: 8px;
+  }
+  
+  /* Gambar suhu */
+  .temperature img {
+    width: 120px;
+    margin-top: 10px;
+    filter: drop-shadow(0 6px 24px rgba(0, 0, 0, 0.2));
+  }
+  
+  .temperature figcaption {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  /* Deskripsi cuaca */
+  .description {
+    font-size: 0.95rem;
+    color: #666;
+    padding: 10px 0 20px;
+  }
+  
+  /* Detail list (humidity, pressure, cloud) */
+  ul {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
-main li{
-    background-color: #f78a55;
-    color: white;
-    border-radius: 10px;
-    padding: 20px 10px;
-    background-image: linear-gradient(
-        to bottom,
-        transparent 50%,
-        #0003 50%
-    );
-    font-weight: bold;font-size: small;
-}
-
-main li i{
-    font-size: 2em;
-    display: block!important;
-    margin: 20px 0;
-}
-
-main li:nth-child(2){
-    background-color: #b56291;
-}
-main li:nth-child(3){
-    background-color: #48567b;
-}
-
-main.eror{
+    gap: 12px;
+  }
+  
+  li {
+    background: linear-gradient(to bottom, #2196f3, #1976d2);
+    color: #fff;
+    border-radius: 12px;
+    padding: 16px 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  li:hover {
+    transform: translateY(-3px);
+  }
+  
+  li i {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  /* Warna berbeda */
+  li:nth-child(2) {
+    background: linear-gradient(to bottom, #ab47bc, #8e24aa);
+  }
+  li:nth-child(3) {
+    background: linear-gradient(to bottom, #26a69a, #00796b);
+  }
+  
+  /* Efek error */
+  main.eror {
     animation: errorEffect 0.3s linear 1;
-}
-
-@keyframes errorEffect{
-    0%{
-        transform: translate(10px, 5px);
-    }25%{
-        transform: translate(-5px, 0);
-        
-    }50%{
-        transform: translate(8px, 2px);
-    }75%{
-        transform: translate(-2px, 5px);
-    }100%{
-        transform: translate(0, 0);
-        
-    }
-}
+  }
+  
+  @keyframes errorEffect {
+    0% { transform: translate(10px, 5px); }
+    25% { transform: translate(-5px, 0); }
+    50% { transform: translate(8px, 2px); }
+    75% { transform: translate(-2px, 5px); }
+    100% { transform: translate(0, 0); }
+  }
+  
