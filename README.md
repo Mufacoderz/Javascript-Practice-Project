@@ -58,9 +58,7 @@ Buka halaman utama: [disini](https://mufacoderz.github.io/Javascript-Practice-Pr
 ---
 
 ### 🌏 Info negara
-![Preview](projects/Info%Negara/preview.png) 
+![Preview](projects/Info%20Negara/preview.png) 
 🔗 [Lihat Project](projects/Info%20Negara/index.html)
-
-
 
 
