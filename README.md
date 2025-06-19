@@ -9,7 +9,7 @@ Kumpulan mini project JavaScript  untuk latihan dan eksplorasi fitur dasar DOM, 
 
 ![Routing Preview](preview/preview.png)
 
-Buka halaman utama: [Index Page](https://mufacoderz.github.io/Javascript-Practice-Project/)
+Buka halaman utama: [disini](https://mufacoderz.github.io/Javascript-Practice-Project/)
 
 ---
 
