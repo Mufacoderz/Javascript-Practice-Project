@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Info Negara Dunia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Info Negara Dunia 🌍</h1>
+    <form id="search-form">
+      <input type="text" id="country-input" placeholder="Masukkan nama negara..." required />
+      <button type="submit">Cari</button>
+    </form>
+
+    <div id="result" class="result hidden">
+      <img id="flag" alt="Bendera Negara">
+      <h2 id="country-name"></h2>
+      <p><strong>Ibukota:</strong> <span id="capital"></span></p>
+      <p><strong>Populasi:</strong> <span id="population"></span></p>
+      <p><strong>Mata Uang:</strong> <span id="currency"></span></p>
+      <p><strong>Bahasa:</strong> <span id="languages"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
