@@ -51,9 +51,15 @@ Buka halaman utama: [Index Page](https://mufacoderz.github.io/Javascript-Practic
 
 ---
 
-### 🖊⛅ Weather App
+### ⛅ Weather App
 ![Preview](projects/Weather%20app/preview.png) 
 🔗 [Lihat Project](projects/Weather%20app/index.html)
+
+---
+
+### 🌏 Info negara
+![Preview](projects/Info%Negara/preview.png) 
+🔗 [Lihat Project](projects/Info%20Negara/index.html)
 
 
 

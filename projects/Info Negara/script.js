@@ -8,6 +8,8 @@ const population = document.getElementById('population');
 const currency = document.getElementById('currency');
 const languages = document.getElementById('languages');
 
+const container = document.getElementById('container')
+
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   if (input.value != '') {
@@ -34,6 +36,9 @@ const searchCountry = (namaNegara) => {
     })
     .catch(error => {
       console.error('Terjadi kesalahan:', error);
-      alert('Negara tidak ditemukan!');
+      container.classList.add('eror')
+            setTimeout(() => {
+                main.classList.remove('eror')
+            }, 1000)
     });
 }
