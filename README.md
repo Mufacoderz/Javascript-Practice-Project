@@ -61,4 +61,10 @@ Buka halaman utama: [disini](https://mufacoderz.github.io/Javascript-Practice-Pr
 ![Preview](projects/Info%20Negara/preview.png) 
 🔗 [Lihat Project](projects/Info%20Negara/index.html)
 
+---
+
+### 🎮 Scissor Paper Stone Game
+![Preview](projects/preview.png) 
+🔗 [Lihat Project](https://mufacoderz.github.io/Suit-Game/)
+
 
