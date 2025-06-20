@@ -6,65 +6,82 @@
   <title>JS Practice Projects</title>
   <style>
     * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f0f4f8;
-      padding: 2rem;
-      color: #2d3436;
-    }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #e8f5e9);
+  padding: 2rem;
+  color: #2d3436;
+}
 
-    h1 {
-      text-align: center;
-      margin-bottom: 2rem;
-      color: #2c3e50;
-    }
+h1 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #1e3a8a;
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
 
-    .project-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      padding: 0 10%;
-    }
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
-    .card {
-      background: #ffffff;
-      width: 180px;
-      border-radius: 16px;
-      padding: 1rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      transition: transform 0.2s ease;
-    }
+.card {
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border-radius: 20px;
+  padding: 1.2rem;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
 
-    .card img {
-      width: 64px;
-      height: 64px;
-      object-fit: contain;
-      margin-bottom: 1rem;
-    }
+.card img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));
+}
 
-    .card a {
-      text-decoration: none;
-      font-weight: bold;
-      color: #2c3e50;
-      text-align: center;
-    }
+.card a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #374151;
+  text-align: center;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
 
-    .card a:hover {
-      text-decoration: underline;
-    }
+.card a:hover {
+  color: #1e88e5;
+  text-decoration: underline;
+}
+
+.card {
+  animation: fadeIn 0.4s ease-in-out both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
   </style>
 </head>
 <body>
