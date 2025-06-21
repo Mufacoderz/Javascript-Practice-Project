@@ -64,7 +64,7 @@ Buka halaman utama: [disini](https://mufacoderz.github.io/Javascript-Practice-Pr
 ---
 
 ### 🎮 Scissor Paper Stone Game
-![Preview](projects/scissor-preview.png) 
+![Preview](preview/scissor-preview.png) 
 🔗 [Lihat Project](https://mufacoderz.github.io/Suit-Game/)
 
 
