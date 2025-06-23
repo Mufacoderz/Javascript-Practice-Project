@@ -65,7 +65,7 @@ body {
 
 #imgBox {
     width: 200px;
-    margin: 20px auto 0;
+    margin: 20px auto ;
     max-height: 0;
     overflow: hidden;
     transition: max-height 1s;
@@ -75,7 +75,7 @@ body {
 #imgBox.show-img {
     max-height: 300px;
     padding: 10px;
-    border: 2px dashed #7a8dfd;
+    border: 2px solid #7a8dfd;
     background: #fff;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
