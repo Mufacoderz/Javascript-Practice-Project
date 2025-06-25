@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -5,123 +6,103 @@
 }
 
 body {
-  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4f8, #dbeafe);
   font-family: 'Segoe UI', 'Poppins', sans-serif;
   color: #1f2937;
-  min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 50px 20px;
+  flex-direction: column;
 }
 
-.container {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 35px;
-  width: 100%;
-  max-width: 960px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
-  border: 1px solid #e5e7eb;
-  transition: box-shadow 0.3s ease;
-}
-
-.container:hover {
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
-}
-
-h1 {
-  font-size: 2.6rem;
+header {
+  padding: 50px 20px 30px;
   text-align: center;
-  margin-bottom: 30px;
-  color: #1e293b;
-  letter-spacing: 0.5px;
+  background: linear-gradient(180deg, #3b82f6, #60a5fa);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
 }
 
 .search-form {
   display: flex;
+  justify-content: center;
   gap: 12px;
-  margin-bottom: 30px;
   flex-wrap: wrap;
 }
 
 .search-form input {
-  flex: 1;
-  padding: 14px 16px;
-  border: 2px solid #cbd5e1; 
+  padding: 14px 18px;
   border-radius: 10px;
+  border: none;
+  flex: 1;
+  max-width: 450px;
   font-size: 1rem;
-  background-color: #ffffff;
-  color: #1f2937;
   outline: none;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.search-form input:focus {
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .search-form button {
   padding: 14px 24px;
-  background-color: #3b82f6;
+  background-color: #2563eb;
   color: white;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 1rem;
-  font-weight: 600;
+  font-weight: bold;
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .search-form button:hover {
-  background-color: #2563eb; 
+  background-color: #1d4ed8;
   transform: translateY(-2px);
 }
 
+
 .results-grid {
+  padding: 40px 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 28px;
 }
 
 .anime-card {
-  background-color: #f9fafb;
+  background-color: white;
   border-radius: 12px;
-  padding: 16px;
-  text-align: center;
-  color: #1f2937;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
-  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 15px;
 }
 
 .anime-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
 }
 
 .anime-card img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
-  margin-bottom: 12px;
-  transition: transform 0.3s ease;
-}
-
-.anime-card:hover img {
-  transform: scale(1.03);
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 
 .anime-card h3 {
-  font-size: 1.1rem;
-  margin-bottom: 6px;
-  color: #1e3a8a; 
+  font-size: 1.2rem;
+  color: #1e3a8a;
+  margin: 10px 0 6px;
+  padding: 0 10px;
 }
 
 .anime-card p {
   font-size: 0.9rem;
-  color: #4b5563; 
-  margin-bottom: 4px;
+  color: #4b5563;
+  margin: 0 12px 10px;
   line-height: 1.4;
 }
