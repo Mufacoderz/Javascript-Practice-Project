@@ -66,5 +66,10 @@ Buka halaman utama: [disini](https://mufacoderz.github.io/Javascript-Practice-Pr
 ### 🎮 Scissor Paper Stone Game
 ![Preview](preview/scissor-preview.png) 
 🔗 [Lihat Project](https://mufacoderz.github.io/Suit-Game/)
+---
+
+### 🍙 Anime Finder
+![Preview](preview/anime-preview.png) 
+🔗 [Lihat Project](projects/Anime%20Finder/index.html)
 
 
