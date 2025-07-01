@@ -1,49 +1,70 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f0f0f0;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #d0e8f2, #f0f4f8);
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-
 }
 
 .container {
     text-align: center;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    max-width: 400px;
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 420px;
     width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-h1{
-    font-size: 2em;
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-size: 2.4em;
     color: #333;
+    margin-bottom: 25px;
+}
+
+.color-picker {
     margin-bottom: 20px;
 }
-.color-picker{
-    margin-bottom: 20px;
-}
-#colorInput{
-    width: 80px;
-    height: 50px;
-    border: none;
+
+#colorInput {
+    width: 100px;
+    height: 60px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
     cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-p{
+
+#colorInput:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
     font-size: 1.2em;
     color: #555;
-    margin: 10px 0;
+    margin: 12px 0;
 }
 
-.color-display{
+#colorCode {
+    font-weight: bold;
+    color: #444;
+}
+
+.color-display {
     width: 100%;
     height: 150px;
     border-radius: 12px;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
+    margin-top: 25px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
 }
