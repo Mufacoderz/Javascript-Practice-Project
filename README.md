@@ -79,5 +79,11 @@ Buka halaman utama: [disini](https://mufacoderz.github.io/Javascript-Practice-Pr
 ![Preview](preview/highlight-preview.png) 
 
 
+---
+
+### 🎲 Dice Roller
+![Preview](preview/dice-preview.png) 
+
+
 
 
