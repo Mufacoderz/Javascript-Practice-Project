@@ -1,10 +1,10 @@
 const dice = document.getElementById('dice');
 
 function rollDice() {
-  // Tambahkan kelas shake
+  
   dice.classList.add('shake');
 
-  // Setelah 400ms (durasi animasi), ubah isi dan hapus shake
+
   setTimeout(() => {
     const value = Math.floor(Math.random() * 6) + 1;
     drawDots(value);

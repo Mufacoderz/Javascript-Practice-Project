@@ -48,7 +48,6 @@ body {
   margin: auto;
 }
 
-/* Tombol Modern */
 button {
   padding: 12px 26px;
   font-size: 18px;
@@ -70,7 +69,7 @@ button:active {
   transform: scale(0.96);
 }
 
-/* Animasi shake (goyangan) */
+
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   20% { transform: translate(-2px, 0px) rotate(-2deg); }
